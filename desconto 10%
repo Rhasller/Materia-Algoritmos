@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    real compra, vades, valor
+    logico desconto = verdadeiro
+
+    escreva("Valor da compra:R$\n")
+    leia(compra)
+
+    escreva("À vista?\n")
+    leia(desconto)
+
+    vades = compra * 0.10
+    valor = compra - vades
+
+    se (desconto == verdadeiro){
+      escreva("Valor com desconto de 10%: R$",valor)
+    }
+
+    senao{
+      escreva("Sem desconto:R$",compra)
+    }
+  }
+}
