@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+
+    logico CNH = verdadeiro
+    logico CNH_vencida
+
+    escreva("Possui a CNH?\n")
+    leia (CNH)
+
+    escreva("Esta vencida?\n")
+    leia(CNH_vencida)
+
+    se ( CNH == verdadeiro e CNH_vencida != verdadeiro ){
+  escreva("Apto")
+    }
+
+    senao{
+      escreva("Não pode dirigir!")
+    }
+  }
+}
