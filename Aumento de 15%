@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+    
+    real salario
+    real bonus
+    logico aumento = verdadeiro
+
+    escreva ("Valor do salário: R$ \n")
+    leia(salario)
+
+    escreva ("Possui benefício? \n")
+    leia (aumento == verdadeiro)
+    
+    bonus = salario * 0.15
+    
+    se (salario <= 2000){
+      escreva("\nAutorizado o aumento: ", salario + bonus)
+    }
+
+    senao{
+      escreva("Aumento não autorizado: ", salario)
+    }
+  }
+}
