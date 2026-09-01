@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+
+    cadeia resposta
+    logico chovendo = verdadeiro
+
+    escreva("Está chovendo? s/n\n")
+    leia(resposta)
+
+
+    se (resposta == "sim"){
+      chovendo = verdadeiro
+      escreva("Lembre-se do guarda-chuva")
+    }
+    senao se (chovendo){
+      chovendo = falso
+      escreva("Pode sair sem o guarda-chuva.")
+    }
+    
+  }
+}
