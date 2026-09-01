@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+    inteiro idade
+    logico autorizado = verdadeiro
+
+    escreva("Idade: \n")
+    leia(idade)
+
+    escreva("Possui autorização?\n")
+    leia(autorizado)
+
+    se (idade>=12 e idade <=17 e autorizado == verdadeiro){
+      escreva("Pode participar!\n")
+    }
+
+    senao{
+      escreva("Não autorizado a participar!\n")
+    }
+      
+    
+  }
+}
