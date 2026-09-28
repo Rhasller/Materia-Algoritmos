@@ -6,14 +6,19 @@ programa
 		{
 			caso 1:
 				retorne "Dinheiro"
+
 			caso 2:
 				retorne "Cartao de Credito"
+
 			caso 3:
 				retorne "Cartao de Debito"
+
 			caso 4:
 				retorne "Pix"
+
 			caso 5:
 				retorne "Boleto"
+
 			caso contrario:
 				retorne "Opcao invalida"
 		}
@@ -24,6 +29,7 @@ programa
 		real valorCompra
 		real desconto
 		real valorFinal
+		real porcentagemDesconto
 		inteiro opcao
 		cadeia pagamento
 
@@ -50,16 +56,27 @@ programa
 		// Dinheiro, Cartao de Debito e Pix recebem 10% de desconto
 		se (opcao == 1 ou opcao == 3 ou opcao == 4)
 		{
+			porcentagemDesconto = 10.0
 			desconto = valorCompra * 0.10
 			valorFinal = valorCompra - desconto
 
+			escreva("\n===== DESCONTO =====\n")
+			escreva("Porcentagem do desconto: ", porcentagemDesconto, "%\n")
 			escreva("Valor do desconto: R$ ", desconto, "\n")
+			escreva("Valor da compra: R$ ", valorCompra, "\n")
 			escreva("Valor final da compra: R$ ", valorFinal, "\n")
 		}
 		senao
 		{
-			escreva("Sem desconto\n")
-			escreva("Valor final da compra: R$ ", valorCompra, "\n")
+			porcentagemDesconto = 0.0
+			desconto = 0.0
+			valorFinal = valorCompra
+
+			escreva("\n===== DESCONTO =====\n")
+			escreva("Sem desconto para esta forma de pagamento.\n")
+			escreva("Porcentagem do desconto: ", porcentagemDesconto, "%\n")
+			escreva("Valor do desconto: R$ ", desconto, "\n")
+			escreva("Valor final da compra: R$ ", valorFinal, "\n")
 		}
 	}
 }
