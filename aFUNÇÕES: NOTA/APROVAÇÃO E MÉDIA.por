@@ -27,16 +27,6 @@ programa {
    }senao{
 
     escreva ("Mdeia final", resultado)
-
-/*
-   }
-    se (aprovado){
-      escreva("Você esta Aprovado!!")
-    }senao{
-      escreva("reprovado!!")
-    }*/
-  
-    
   }
 
   funcao real media(real nota1, real nota2){
