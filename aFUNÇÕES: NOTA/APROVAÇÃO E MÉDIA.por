@@ -8,20 +8,12 @@ programa {
    escreva( "Informe a primeira nota: ")
    leia(nota1)
 
-   escreva("\nInforme a segunda nota: ")
+   escreva("Informe a segunda nota: ")
    leia(nota2)
 
    resultado = media (nota1, nota2)
 
-   se(aprovado == falso e resultado > 5.9){
-    aprovado = verdadeiro
-    escreva("aprovado!!")
-
-   }senao{
-    escreva("reprovado, mais sorte na proxima!!!")
-   }
-
-   se(resultado > 59 e resultado <= 100){ 
+   se (resultado > 59 e resultado <= 100){ 
     aprovado =  verdadeiro
 
    }senao{
@@ -35,7 +27,5 @@ programa {
 
     resultado = ( nota1 + nota2)/2
     retorne resultado
-
-
-  }
+   }
 }
